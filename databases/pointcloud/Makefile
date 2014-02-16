@@ -17,4 +17,7 @@ WRKSRC=		${WRKDIR}/pramsey-${PORTNAME}-${GH_TAGNAME}
 USE_AUTOTOOLS=	autoconf
 USES=		gmake
 
+USE_PGSQL=	yes
+RUN_DEPENDS=    postmaster:${PORTSDIR}/databases/postgresql${PGSQL_VER}-server
+
 .include <bsd.port.mk>
