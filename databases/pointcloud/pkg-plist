@@ -1,6 +1,9 @@
 lib/postgresql/pointcloud.so
-share/postgresql/contrib/pointcloud--1.0.sql
-share/postgresql/contrib/pointcloud_postgis--1.0.sql
-@dirrmtry share/postgresql/contrib
+share/postgresql/extension/pointcloud--1.0.sql
+share/postgresql/extension/pointcloud.control
+share/postgresql/extension/pointcloud_postgis--1.0.sql
+share/postgresql/extension/pointcloud_postgis.control
+@dirrmtry share/postgresql/extension
 @dirrmtry share/postgresql
 @dirrmtry lib/postgresql
+

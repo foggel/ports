@@ -18,6 +18,8 @@ USE_AUTOTOOLS=	autoconf
 USES=		gmake
 
 USE_PGSQL=	yes
-RUN_DEPENDS=    postmaster:${PORTSDIR}/databases/postgresql${PGSQL_VER}-server
+#RUN_DEPENDS=    postmaster:${PORTSDIR}/databases/postgresql${PGSQL_VER}-server
+WANT_PGSQL=server
+WANT_PGSQL_VER=	91+
 
 .include <bsd.port.mk>
