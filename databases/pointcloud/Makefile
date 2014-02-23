@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	pointcloud
-PORTVERSION=	1.0
+PORTVERSION=	0.1
 CATEGORIES=	databases
 
 MAINTAINER=	gustafson.erik@gmail.com
