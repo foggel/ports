@@ -7,6 +7,8 @@ CATEGORIES=	databases
 MAINTAINER=	gustafson.erik@gmail.com
 COMMENT=	Pointcloud extenstion for PostgresSQL
 
+LICENSE=	BSD3CLAUSE
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	pramsey
 GH_PROJECT=	pointcloud
