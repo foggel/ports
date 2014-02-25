@@ -7,6 +7,8 @@ CATEGORIES=	converters
 MAINTAINER=	gustafson.erik@gmail.com
 COMMENT=	PDAL - Point Data Abstraction Library
 
+LICENSE=	BSD3CLAUSE
+
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
 
