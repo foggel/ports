@@ -19,9 +19,10 @@ WRKSRC=		${WRKDIR}/pramsey-${PORTNAME}-${GH_TAGNAME}
 USE_AUTOTOOLS=	autoconf
 USES=		gmake
 
-USE_PGSQL=	yes
+USE_PGSQL=	9.1+
 #RUN_DEPENDS=    postmaster:${PORTSDIR}/databases/postgresql${PGSQL_VER}-server
-WANT_PGSQL=server
-WANT_PGSQL_VER=	91+
+RUN_DEPENDS=	${LOCALBASE}/share/postgis:${PORTSDIR}/databases/postgis20
+WANT_PGSQL=	server
+#WANT_PGSQL_VER=	91+
 
 .include <bsd.port.mk>
