@@ -1,5 +1,5 @@
---- ./src/drivers/pgpointcloud/Reader.cpp.orig	2014-07-08 13:22:33.182961510 +0200
-+++ ./src/drivers/pgpointcloud/Reader.cpp	2014-07-08 13:23:47.442864818 +0200
+--- ./src/drivers/pgpointcloud/Reader.cpp.orig	2014-02-21 22:48:18.000000000 +0100
++++ ./src/drivers/pgpointcloud/Reader.cpp	2014-08-20 19:23:26.761292482 +0200
 @@ -233,6 +233,8 @@
      oss << "FROM pg_class c, pg_attribute a ";
      oss << "WHERE c.relname = '" << m_table_name << "' ";
