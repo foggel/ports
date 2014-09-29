@@ -25,7 +25,7 @@ USES=		cmake
 CMAKE_ARGS=	-DWITH_TESTS=OFF 
 USE_PYTHON=	yes
 
-OPTIONS_DEFINE=	GDAL GEOTIFF PROJ LIBXML2 LASZIP
+OPTIONS_DEFINE=	GDAL GEOTIFF PROJ LIBXML2 LASZIP DEBUG
 
 GDAL_DESC=	Geospatial Data Abstraction Library
 
@@ -43,6 +43,9 @@ LIB_DEPENDS+=	libgeotiff.so:${PORTSDIR}/graphics/libgeotiff
 LIB_DEPENDS+=	libproj.so:${PORTSDIR}/graphics/proj
 .endif
 
+.if ${PORT_OPTIONS:DEBUG}
+CMAKE_BUILD_TYPE=Debug
+.endif
 .if ${PORT_OPTIONS:MLIBXML2}
 LIB_DEPENDS+=	libxml2.so:${PORTSDIR}/textproc/libxml2
 .endif
