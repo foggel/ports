@@ -29,6 +29,8 @@ USE_GITHUB=	yes
 GH_PROJECT=	qgis
 GH_TAGNAME=	cd9d645
 GH_ACCOUNT=	qgis
+WRKSRC=	${WRKDIR}/QGIS-${GH_TAGNAME}
+
 
 USES=		cpe bison cmake fortran gmake python
 USE_SQLITE=	yes
