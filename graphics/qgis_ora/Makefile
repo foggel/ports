@@ -26,8 +26,9 @@ LIB_DEPENDS=	libexecinfo.so:${PORTSDIR}/devel/libexecinfo \
 		libspatialite.so:${PORTSDIR}/databases/spatialite
 
 USE_GITHUB=	yes
-GH_PROJECT=	${PORTNAME:tu}
+GH_PROJECT=	qgis
 GH_TAGNAME=	cd9d645
+GH_ACCOUNT=	qgis
 
 USES=		cpe bison cmake fortran gmake python
 USE_SQLITE=	yes
