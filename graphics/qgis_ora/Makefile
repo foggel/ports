@@ -1,7 +1,7 @@
 # Created by: Laurent Courty
 # $FreeBSD: head/graphics/qgis/Makefile 403662 2015-12-13 12:45:25Z rakuco $
 
-PORTNAME=	qgis
+PORTNAME=	qgis_ora
 PORTVERSION=	2.12.0
 PORTREVISION=	1
 CATEGORIES=	graphics geography
